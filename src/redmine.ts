@@ -3,8 +3,9 @@ import { Config } from './config';
 import { Issue } from './types';
 import { getCurrentTime } from './time';
 
-const ignored = [71060, 88809]; // Список номеров задач для игнора
-export const issuesListRequest = `${Config.BASE_URL}/issues.json?key=${Config.REDMINE_API_KEY}&status_id!=5`;
+const ignored = [71060]; // Список номеров задач для игнора
+export const issuesListRequest = `${Config.BASE_URL}/issues.json?key=${Config.REDMINE_API_KEY}&status_id!=5&project_id=25`;
+// if need add "ВСК" issues remove project_id from request params or add project_id = 34
 
 let oldIssuesMap: Map<number, Issue>;
 let missedIssuesList: Issue[] = [];

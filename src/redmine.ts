@@ -3,7 +3,7 @@ import { Config } from './config';
 import { Issue } from './types';
 import { getCurrentTime } from './time';
 
-const ignored = [71060]; // Список номеров задач для игнора
+const ignored = [71060, 88809]; // Список номеров задач для игнора
 export const issuesListRequest = `${Config.BASE_URL}/issues.json?key=${Config.REDMINE_API_KEY}&status_id!=5`;
 
 let oldIssuesMap: Map<number, Issue>;

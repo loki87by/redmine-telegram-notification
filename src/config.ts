@@ -5,7 +5,7 @@ const {
     CHAT_ID,
     REDMINE_API_KEY,
     BASE_URL,
-    GOOGLE_CALENDAR_KEY = 'AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs',
+    GOOGLE_CALENDAR_KEY// = 'AIzaSyBNlYH01_9Hc5S1J9vuFmu2nUqBZJNAXxs',
 } = process.env;
 
 // BASE_URL - basic url address like https://redmine.your-company.com
